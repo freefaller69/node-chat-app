@@ -27,6 +27,8 @@ socket.on('connect', () => {
       window.location.href = '/';
     } else {
       console.log('No error');
+      console.log(params);
+      $('#roomname').text('Room: ' + params.room);
     }
   });
 });

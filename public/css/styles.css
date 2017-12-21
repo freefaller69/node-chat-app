@@ -21,6 +21,12 @@ h3 {
   font-size: 1.5rem;
 }
 
+h4 {
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 button {
   border: none;
   background: #265f82;
@@ -113,6 +119,11 @@ button:disabled {
 }
 
 .chat__sidebar h3 {
+  color: #e6eaee;
+  margin: 10px 20px;
+}
+
+.chat__sidebar h4 {
   color: #e6eaee;
   margin: 10px 20px;
   text-align: left;
