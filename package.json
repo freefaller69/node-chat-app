@@ -19,12 +19,17 @@
     "socket.io": "^2.0.4"
   },
   "devDependencies": {
+    "autoprefixer": "^7.2.3",
     "browser-sync": "^2.21.0",
+    "cssnano": "^3.10.0",
     "expect": "^21.2.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
     "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.2",
     "mocha": "^4.0.1"
   }
 }

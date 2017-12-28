@@ -12,25 +12,28 @@
 </head>
 <body class="chat">
 
-  <div class="chat__sidebar">
+  <header>
     <h3 id="roomname"></h3>
+  </header>
+
+  <aside class="chat__sidebar">
     <h4>Users</h4>
     <div id="users"></div>
-  </div>
+  </aside>
 
-  <div class="chat__main">
+  <main class="chat__main">
     <ol id="messages" class="chat__messages"></ol>
+  </main>
 
-    <footer class="chat__footer">
-      <form id="message-form">
-        <input name="message" type="text" placeholder="Message goes here" autofocus autocomplete="off">
-        <button>Send</button>
-      </form>
-      <button id="send-location">Send Location</button>
-    </footer>
+  <footer class="chat__footer">
+    <form id="message-form">
+      <input name="message" type="text" placeholder="Message goes here" autofocus autocomplete="off">
+      <button>Send</button>
+    </form>
+    <button id="send-location">Send Location</button>
+  </footer>
 
 
-  </div>
 
   <script id="message-template" type="text/template">
     <li class="message">

@@ -1,0 +1,88 @@
+.chat
+  display: grid
+  grid-template-columns: 200px auto
+  grid-template-rows: 50px auto 60px
+  grid-template-areas: "sidebar header" "sidebar content" "sidebar footer"
+
+header
+  grid-area: header
+  background: $green
+
+aside
+  grid-area: sidebar
+  overflow-y: scroll
+  height: 100vh
+  background: linear-gradient(325deg, rgba(0, 41, 91, 1) 0%, rgba(49, 84, 129, 1) 100%)
+
+aside li
+  list-style-type: none
+  background: $gray
+  border: 1px solid #e1e1e1
+  border-radius: 5px
+  padding: 10px
+  margin: 10px
+
+main
+  grid-area: content
+  display: flex
+  flex-direction: column
+  height: calc(100vh-110px)
+  width: 100%
+
+.chat__messages
+  flex-grow: 1
+  overflow-y: scroll
+  list-style-type: none
+  padding: 10px
+
+.message
+  padding: 10px
+
+.message__title
+  display: flex
+  margin-bottom: 5px
+
+.message__title h4
+  font-weight: 600
+  margin-right: 10px
+
+.message__title span
+  color: #999
+
+footer
+  grid-area: footer
+  background: $gray
+  display: flex
+  padding: 10px
+  flex-shrink: 0
+
+footer form
+  flex-grow: 1
+  display: flex
+
+footer form *
+  margin-right: 10px
+
+footer form input
+  border: none
+  padding: 10px
+  flex-grow: 1
+
+button
+  border: 1px solid $gray
+  border-radius: 5px
+  background: $blue
+  color: $white
+  cursor: pointer
+  padding: 10px
+  transition: background .3s ease
+
+button:hover
+  border: 1px solid $blue
+  background: $green
+  color: $white
+  padding: 10px
+
+button:disabled
+  cursor: default
+  background: $gray
