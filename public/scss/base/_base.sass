@@ -86,3 +86,32 @@ button:hover
 button:disabled
   cursor: default
   background: $gray
+
+@media (max-width: 600px)
+  *
+    font-size: 1rem
+
+  .chat
+    grid-template-columns: 100vw
+    grid-template-rows: 40px auto 60px
+    grid-template-areas: "header" "content" "footer"
+
+  // header
+  //   height: 40px
+
+  aside
+    display: none
+
+  .chat__main
+    min-height: calc(100vh - 100px)
+
+  // footer
+  // height: 60px
+  //   flex-direction: column
+  //   align-self: flex-end
+  
+  footer button
+    margin-right: 0px
+
+  #send-location
+    display: none
